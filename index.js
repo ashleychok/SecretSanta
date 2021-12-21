@@ -14,17 +14,13 @@ document.addEventListener('DOMContentLoaded', function(){
       localStorage.setItem('loggedIn', 'true')
       setTimeout(() => document.location.href = 'welcome.html', 500);
     }
-    console.log(wordFromArray);
   }
   const firstLetter = document.getElementById('firstLetter');
   firstLetter.focus()
   const secondLetter = document.getElementById('secondLetter');
   const thirdLetter = document.getElementById('thirdLetter');
   const fourthLetter = document.getElementById('fourthLetter');
-  console.log(firstLetter)
   firstLetter.addEventListener('input', (e) => {
-    console.log(123);
-    console.log(e)
     if (e.target.value) {
       word[0] = e.target.value;
       secondLetter.focus();
